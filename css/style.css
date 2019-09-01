@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Prosto+One&display=swap');
+
+
+
+
+html {
+    min-height: 100%;
+}
+
+:root {
+    --mainBlack: #000000;
+    --mainGreen: #2DBD9D;
+    --Green: #72DE93;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+
+.navbar-brand {
+    font-family: 'Prosto One', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    margin-left: 2rem;
+    margin-top: 1.2rem;
+
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.nav-item a {
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-right: 2rem;
+    margin-top: 1.2rem;
+}
+
+
+.nav-item a:hover {
+    color: #fff
+}
+
+
+
+.showcase {
+    background: url(/img/showcase-bg.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.showcase-content {
+    margin: 7rem 0;
+}
+
+/*service*/
+.services {
+    margin: 3rem;
+}
+
+.service-item {
+    align-items: center;
+    justify-content: center;
+}
+
+.service-text p {
+    color: #000000;
+}
+
+.service-item img {
+    border: none;
+    width: auto;
+    height: auto;
+    margin: 1.5rem;
+
+}
+
+.text-lg {
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    font-size: 3rem;
+    padding: 0 2rem;
+}
+
+.text-sm {
+    color: #999;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.showcase p {
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 1.9rem;
+    letter-spacing: -0.5px;
+    font-weight: lighter;
+}
+
+/*footer*/
+.footer {
+    background-color: #EBEDF2;
+    display: block;
+    padding: 2rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+    margin: 0.2rem;
+}
+
+.footer li {
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*Buttons*/
+button:focus {
+
+    outline: none;
+    outline: 5px auto -webkit-focusring-color;
+
+}
+
+.showcase-button {
+    text-align: center;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #2DBD9D 0%, #72DE93 100%);
+    color: #fff !important;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: translateY(-6px);
+    transition: 0.1s ease-in-out;
+}
+
+.btn-primary:active {
+    transform: translateY(6px);
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-xl {
+
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+/*Navbar collapse animation */
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    transition: 0.4s;
+    background-color: #fff;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media only screen and (max-width: 768px) {
+    .showcase {
+        height: 100vh;
+    }
+
+    .showcase p {
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+
+    .text-lg h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .footer-span {
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .showcase {
+        height: 110vh;
+    }
+
+    .showcase p {
+        font-size: 1rem;
+    }
+
+    .text-lg h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-span {
+        margin-bottom: 3rem;
+    }
+}
